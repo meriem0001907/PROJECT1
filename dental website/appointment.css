@@ -1,0 +1,78 @@
+body {
+    background-color: #4070f4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:  10px;
+     
+      margin: 0;
+      padding: 0;
+    }
+  
+    form {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 40px;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    hr {
+      display: none !important;
+    }
+    
+    h1, h2 {
+      text-align: center;
+      grid-column: span 2;
+      margin-bottom:-10px;
+    }
+    
+    label {
+      display: inline;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    
+    input[type="checkbox"] {
+      width: auto;
+      margin-right: 10px;
+    }
+    
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+      grid-column: span 2;
+    }
+    
+    button, input[type="submit"] {
+      grid-column: span 2;
+      padding: 14px;
+      background-color:#4070f4;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    button:hover, input[type="submit"]:hover {
+      background-color:rgb(34, 116, 248);
+    }
+    
+    @media (max-width: 600px) {
+      form {
+        grid-template-columns: 1fr;
+      }
+    } 

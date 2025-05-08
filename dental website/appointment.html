@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="appointment.css">
+</head>
+
+<body>
+    <h1><b>Contactez-nous</b></h1>
+    <hr>
+
+    <div>
+        <h2>Vous pouvez maintenant réserver votre rendez-vous</h2>
+
+        <form action="confirmation_ici.html" method="post">
+            <fieldset>
+                <legend>Contactez-nous</legend>
+
+                <div>
+                    <label for="date"><b>Date du rendez-vous :</b></label>
+                    <input name="date" type="date" id="date" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="time"><b>Heure du rendez-vous :</b></label>
+                    <input name="time" type="time" id="time" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="services"><b>Choisissez le service souhaité :</b></label>
+                    <br>
+                    <select id="services" name="services" required>
+                        <option value="cleaning">Nettoyage des dents | تنظيف الأسنان</option>
+                        <option value="whitening">Blanchiment des dents | تبييض الأسنان</option>
+                        <option value="filling">Plombages dentaires | حشو الأسنان</option>
+                        <option value="extraction">Extraction dentaire | خلع الأسنان</option>
+                        <option value="implants">Implants dentaires | زراعة الأسنان</option>
+                        <option value="braces">Orthodontie | تقويم الأسنان</option>
+                        <option value="checkup">Contrôles dentaires périodiques | فحص دوري للأسنان</option>
+                    </select>
+                </div>
+                <br>
+
+                <div>
+                    <label for="maladie"><b>Avez-vous des maladies chroniques ?</b></label>
+                    <input name="maladie" type="text" placeholder="Indiquez vos maladies" id="maladie">
+                </div>
+                <br>
+
+                <div>
+                    <input type="checkbox" name="premiere_visite" value="oui" id="premiere_visite">
+                    <label for="premiere_visite"><b>Votre première visite chez nous ?</b></label>
+                </div>
+                <br><br>
+
+                <div>
+                    <input type="submit" value="Réserver maintenant">
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+    <script src="appointment.js"></script>
+</body>
+
+</html>
